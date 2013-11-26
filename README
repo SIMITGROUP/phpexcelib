@@ -17,3 +17,9 @@ sudo make install
  <full path to apachectl> stop
  <full path to apachectl> strt
 8. to test it, try run "/path-to-php/php t.php (it will generate excel file at /tmp folder,if you use windows can change output folder )
+
+
+Special thanks to following project:
+https://github.com/zhangsilly/PHPExcel
+http://www.codeproject.com/Articles/42504/ExcelFormat-Library
+http://www.codeproject.com/Articles/13852/BasicExcel-A-Class-to-Read-and-Write-to-Microsoft
