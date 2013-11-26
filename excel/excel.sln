@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "excel", "excel.vcproj", "{7968A765-13C3-48AE-9C5B-BBF2E768C021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_TS|Win32 = Debug_TS|Win32
+		Release_TS|Win32 = Release_TS|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7968A765-13C3-48AE-9C5B-BBF2E768C021}.Debug_TS|Win32.ActiveCfg = Debug_TS|Win32
+		{7968A765-13C3-48AE-9C5B-BBF2E768C021}.Debug_TS|Win32.Build.0 = Debug_TS|Win32
+		{7968A765-13C3-48AE-9C5B-BBF2E768C021}.Release_TS|Win32.ActiveCfg = Release_TS|Win32
+		{7968A765-13C3-48AE-9C5B-BBF2E768C021}.Release_TS|Win32.Build.0 = Release_TS|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

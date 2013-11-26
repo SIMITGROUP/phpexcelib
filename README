@@ -1,0 +1,19 @@
+this is excel lib for php extension. I'd tested it for Mac OS, XAMPP 1.8.3 (php 5.5.3), Ubuntu Linux 12.04,13.04 which is php 5.3.10,5.4.6.
+
+To build the software, you need to:
+
+1. Download php source code which match your xampp, php binary version
+2. extrac php source code to any folder
+3. extract excel.zip to <phpsource>/ext/excel
+4. If u use mac or linux, copy config-mac.m4 or config-linux.m4 to config.m4
+5. run
+phpize
+./configure --with-php-config=<full path to php-config>
+//this step for mac only, edit Makefile, go to line 31 change ‘CXX=‘  to ‘CXX=cc’
+make
+sudo make install
+6. edit php.ini, add in "extension=excel.so"  (or excel.dll if using windows)
+7. restart apache with command:
+ <full path to apachectl> stop
+ <full path to apachectl> strt
+8. to test it, try run "/path-to-php/php t.php (it will generate excel file at /tmp folder,if you use windows can change output folder )
