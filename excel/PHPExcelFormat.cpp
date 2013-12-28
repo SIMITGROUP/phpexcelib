@@ -18,6 +18,8 @@ zend_function_entry	cell_format_methods[]	= {
     PHP_ME(ExcelCellFormat, setBackGround, NULL, ZEND_ACC_PUBLIC)
     PHP_ME(ExcelCellFormat, setFont, NULL, ZEND_ACC_PUBLIC)
     PHP_ME(ExcelCellFormat, setAlignment, NULL, ZEND_ACC_PUBLIC)
+    PHP_ME(ExcelCellFormat, setFormatString, NULL, ZEND_ACC_PUBLIC)
+    
     {NULL, NULL, NULL}
 };
 
@@ -149,6 +151,25 @@ PHP_METHOD(ExcelCellFormat, setAlignment)
     if (fmtObj != NULL && fmtObj->pCellFormat != NULL)
     {
         fmtObj->pCellFormat->set_alignment((char) nAlignment);
+        RETURN_TRUE;
+    }
+    RETURN_FALSE;
+}
+
+PHP_METHOD(ExcelCellFormat, setFormatString)
+{
+   const char*  szStr;
+     int nStrLen;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC,  "s", &szStr, &nStrLen) == FAILURE)
+    {
+        RETURN_FALSE;
+    }
+
+    cell_format_object* fmtObj  = (cell_format_object*) zend_object_store_get_object(this_ptr TSRMLS_CC);
+    if (fmtObj != NULL && fmtObj->pCellFormat != NULL)
+    {
+        fmtObj->pCellFormat->set_format_string((char *)  szStr);
         RETURN_TRUE;
     }
     RETURN_FALSE;

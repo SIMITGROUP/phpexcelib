@@ -56,6 +56,7 @@ void	register_excel_sheet_class_ce(TSRMLS_D);
 PHP_METHOD(ExcelSheet, __construct);
 PHP_METHOD(ExcelSheet, setInteger);
 PHP_METHOD(ExcelSheet, setDouble);
+PHP_METHOD(ExcelSheet, setBorder);
 PHP_METHOD(ExcelSheet, setAnsiString);
 PHP_METHOD(ExcelSheet, setWString);
 PHP_METHOD(ExcelSheet, setFormat);

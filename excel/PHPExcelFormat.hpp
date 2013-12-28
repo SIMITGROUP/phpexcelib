@@ -22,5 +22,5 @@ PHP_METHOD(ExcelCellFormat, __construct);
 PHP_METHOD(ExcelCellFormat, setBackGround);
 PHP_METHOD(ExcelCellFormat, setFont);
 PHP_METHOD(ExcelCellFormat, setAlignment);
-
+PHP_METHOD(ExcelCellFormat, setFormatString);
 #endif //End _HAVE_PHPEXCEL_FORMAT_H__

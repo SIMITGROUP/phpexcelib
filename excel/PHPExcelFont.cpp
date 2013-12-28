@@ -178,9 +178,10 @@ PHP_METHOD(ExcelFont, setFontName)
     {
         RETURN_FALSE;
     }
-
-//ICharsetConvertor * fobj = new UTF8CharsetConvertor();
-    //    RETURN_FALSE;
-  // wchar_t * ft= fobj->stwCvt(szStr, nStrLen);
-    //    FNT_PROPERTY_SET(set_font_name, ft);    
+/*
+ICharsetConvertor * fobj = new UTF8CharsetConvertor();
+        RETURN_FALSE;
+   wchar_t * ft= fobj->stwCvt(szStr, nStrLen);
+        FNT_PROPERTY_SET(set_font_name, ft);    
+        */
 }

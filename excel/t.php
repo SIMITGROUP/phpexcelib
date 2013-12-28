@@ -36,7 +36,7 @@ EXCEL_HALIGN_GENERAL		= 0x00,
 	
 	*/
 	$cellFmt->setAlignment(0x03);
-		$cellFmt->setBackGround(1,0x04000000);
+//		$cellFmt->setBackGround(1,0x04000000);
 		
 		/*
 		
@@ -71,11 +71,11 @@ for ($row = 0; $row < 60;  $row++)
 	}
 	echo "start";
 	$cellFmt2->setAlignment(0x01);
-		$cellFmt2->setBackGround(100100,200200);
+//		$cellFmt2->setBackGround(100100,200200);
 
 echo "ASDDS";
 	$cellFmt3->setAlignment(0x02);
-	$cellFmt3->setBackGround(100100,200200);
+//	$cellFmt3->setBackGround(100100,200200);
 
 	$sheet->setFormat( 0, 0,$cellFmt2);
 	$sheet->setWString( 0, 0, "Set col0,row0 value");

@@ -25,7 +25,7 @@ zend_function_entry	excel_sheet_methods[] = {
 	PHP_ME(ExcelSheet, setAnsiString, ExcelSheet_SetValue_ARGINFO, ZEND_ACC_PUBLIC)
 	PHP_ME(ExcelSheet, setWString, ExcelSheet_SetValue_ARGINFO, ZEND_ACC_PUBLIC)
 	PHP_ME(ExcelSheet, setFormat, ExcelSheet_SetFormat_ARGINFO, ZEND_ACC_PUBLIC)
-
+	PHP_ME(ExcelSheet, setBorder, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(ExcelSheet, setColWidth, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(ExcelSheet, mergeCells, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(ExcelSheet, getTotalRows, NULL, ZEND_ACC_PUBLIC)
@@ -186,6 +186,37 @@ PHP_METHOD(ExcelSheet, setFormat)
     }
     RETURN_FALSE;
 }
+
+
+
+PHP_METHOD(ExcelSheet, setBorder)
+{
+/*   long nRow, nCol;
+   
+   if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "llO", &nCol,&nRow,  &zvalFmt, cell_format_ce) == FAILURE)
+    {
+        RETURN_FALSE;
+    }
+    excel_sheet_object* obj = (excel_sheet_object*) zend_object_store_get_object(this_ptr TSRMLS_CC);
+    if (obj != NULL && obj->pExcelSheet != NULL)
+    {
+        BasicExcelCell* pCell   = obj->pExcelSheet->Cell(nRow, nCol);
+        if (pCell != NULL)
+        {
+            cell_format_object* fmtObj  = (cell_format_object*) zend_object_store_get_object(zvalFmt TSRMLS_CC);
+            if (fmtObj != NULL && fmtObj->pCellFormat != NULL)
+            {
+                pCell->SetFormat(* fmtObj->pCellFormat);
+                RETURN_TRUE;
+            } else {
+                php_error(E_WARNING, "Argument Cell Format is Not a valid Cell Format");
+            }
+        }
+    }
+    RETURN_FALSE;
+    */
+}
+
 
 PHP_METHOD(ExcelSheet, setColWidth)
 {
